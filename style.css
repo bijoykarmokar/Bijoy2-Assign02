@@ -32,7 +32,9 @@
     color: #5D58EF;
 }
 
-
+header{
+    margin-bottom: 60px;
+}
 .navbar{
     justify-content: space-evenly;
     align-items: center;
@@ -54,6 +56,7 @@
     margin-right: 2rem;
     font-size: 1.25rem;
     cursor: pointer;
+    
 }
 .nav-right .btn-primary{
         color: aliceblue;
@@ -68,12 +71,13 @@
 .banner-container{
     align-items: center;
     justify-content: center;
+    gap: 70px;
     max-width: 1200px;
     margin: 0 auto;
 }
-.banner-title{
-    margin-right: 80px;
-    
+
+.banner-image img{
+    width: 470px;
 }
 
 .head0{
@@ -91,9 +95,63 @@
     padding: 10px 47px;
     border-radius: 12px;
 } 
+.menu-bar{
+    display: none;
+    font-size: 25px;
+}
 
+#click{
+    display: none;
+}
 
 /* Using media query for Responsive website */
 @media only screen and (max-width:576px) {
+        .navbar{
+           justify-content: space-between;
+           border-bottom: 1px solid orange;
+           padding-bottom: 10px;
+
+        }
       
+         .nav-links,
+         .nav-right{
+            position: fixed;
+            top: 85px;
+            height: 100vh;
+            left: -100%;
+            background-color:bisque;
+            width: 100%;
+            flex-direction: column;
+            text-align: center;
+            padding: 20px;
+            transition: all 0.5s ease 0.1s;
+         }
+         
+         .nav-links .nav-items{
+            margin: 40px 0;
+         }
+         .menu-bar{
+            display: block;
+            margin-right: 10px;
+         }
+         #click:checked ~ .menu-bar i::before{
+            content: "\f00d";
+         }
+         #click:checked ~ .nav-links{
+            left: 0%;
+            font-size: 30px;
+         }
+         .par0{
+            display: none;
+         }
+         .banner-image img{
+            width: 95%;
+         }
+         .banner-container{
+            flex-direction: column-reverse;
+            text-align: center;
+            
+        }
+        
+
 }
