@@ -351,7 +351,8 @@ main{
     margin-bottom: 35px;
 }
 .title1 .img5{
-    font-size: 42px;
+    width: 85px;
+    height: 85px;
     
 }
 .title1 .head6{
@@ -465,6 +466,7 @@ main{
         .Stories-right{
             grid-template-columns: repeat(2,1fr);
             gap: 10px;
+           
         }
         .imgages{
             width: 100%;
@@ -473,11 +475,16 @@ main{
             
             width: 100%;
         }
+
         .btn3{
           font-size: 0.5rem;
         }
         .par3{
             font-size:0.5rem;
+        }
+        .par4{
+            margin: 0 10px;
+            font-size: 15px;
         }
         .btn5{
            
@@ -493,7 +500,8 @@ main{
             gap: 32px;
         }
         .title1 .img5{
-            font-size: 1.5rem;
+            height: 69px;
+            width: 69px;
         }
         .title1 .head6{
             font-size: 1.8rem;
@@ -505,11 +513,11 @@ main{
         .head7{
             font-size: 1.25rem;
         }
-        ul a{
-            font-size: 17px;
+        .footer-ul .footer-ancor{
+            font-size: 16px;
         }
         .head8,.icons{
-            font-size: 1.4rem;
+            font-size: 1.3rem;
         }  
         
         
