@@ -71,6 +71,11 @@ header{
         border-radius: 12px;
         font-size: 1.25rem;
         font-weight: 600;
+        cursor: pointer;
+        transition: 0.5s;
+}
+.btn-primary:hover{
+    background-color: #9a6813;
 }
 
 .banner-container{
@@ -99,7 +104,12 @@ header{
     font-size: 1.25ren;
     padding: 10px 47px;
     border-radius: 12px;
+    cursor: pointer;
+    transition: 0.5s;
 } 
+.btn0:hover{
+    background-color: rgba(29, 15, 15, 0.586);
+}
 .menu-bar{
     display: none;
     font-size: 25px;
@@ -111,7 +121,7 @@ header{
 
 /* main section has started */
 main{
-    background-image:url("./assets/bg.png");
+    background-image:url('./assets/bg.png');
     width: 100%;
 }
 .Curriculum-Parent{
@@ -192,6 +202,7 @@ main{
     display: flex ;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
         
 }
 .arrow i{
@@ -200,6 +211,10 @@ main{
 }
 
 /* Third section has started */
+.background-color{
+    background: linear-gradient(white,#fea10158);
+    padding-bottom: 60px;
+}
 .Our-Stories{
     margin-bottom: 80px;
 }
@@ -265,9 +280,9 @@ main{
     
 }
 .four-Stories{
-  
    border-radius: 1rem;
    box-shadow: 0.2px 0.2px 4px;
+   background-color: white;
 }
 .imgages .img3{
     border-radius: 1rem 1rem 0 0;
@@ -295,6 +310,7 @@ main{
     width: 80%;
     margin: 0 auto;
     margin-bottom: 60px;
+    
 }
 .btn4{
     color: white;
@@ -303,9 +319,73 @@ main{
     font-size: 1.25rem;
     border-radius: 12px;
     text-align: center;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out 0.1s;
+    
+}
+.btn4:hover{
+     background-color: rgba(62, 56, 56, 0.586);
 }
 
+/* Footer section has started */
+.footer-tag{
 
+    background-color: #01ACFD;
+}
+.educational{
+    width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    color: #FFFFFF;
+    justify-content: space-between;
+    gap: 205px;
+    padding: 125px 230px 175px 140px;
+}
+.title1{
+    display: flex;
+    align-items: center;
+    margin-bottom: 35px;
+}
+.title1 .img5{
+    font-size: 42px;
+    
+}
+.title1 .head6{
+    font-size: 2.6rem;
+}
+.par5{
+    font-size: 1.25rem;
+    
+}
+
+.head7{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 32px;
+}
+.footer-ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.footer-ul .footer-li{
+    list-style: none;
+}
+.footer-ul .footer-ancor{
+    text-decoration: none;
+    font-weight: 500;
+    color: #FFFFFF;
+}
+
+.head8{
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+.icons{
+    display: flex;
+    gap: 10px;
+}
 /* Using media query for Responsive website */
 @media only screen and (max-width:576px) {
         .navbar{
@@ -395,6 +475,38 @@ main{
         .par3{
             font-size:0.5rem;
         }
-      
-
+        .btn5{
+           
+            margin-bottom: 40px;
+        }
+        .footer-tag{
+           max-width: 100%;
+        }
+        .educational{
+            width:100%;
+            flex-direction: column;
+            padding:65px 0 60px 16px;
+            gap: 32px;
+        }
+        .title1 .img5{
+            font-size: 1.5rem;
+        }
+        .title1 .head6{
+            font-size: 1.8rem;
+        }
+        .par5{
+            font-size: 1rem;
+            width: 50%;
+        }
+        .head7{
+            font-size: 1.25rem;
+        }
+        ul a{
+            font-size: 17px;
+        }
+        .head8,.icons{
+            font-size: 1.4rem;
+        }  
+        
+        
 }
