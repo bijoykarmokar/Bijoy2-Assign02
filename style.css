@@ -284,6 +284,7 @@ main{
     
 }
 .four-Stories{
+
    border-radius: 1rem;
    box-shadow: 0.2px 0.2px 4px;
    background-color: white;
@@ -468,7 +469,8 @@ main{
             gap: 10px;
            
         }
-        .imgages{
+       
+        .imgages,.four-Stories{
             width: 100%;
         }
         .imgages .img3{
@@ -477,7 +479,10 @@ main{
         }
 
         .btn3{
-          font-size: 0.5rem;
+          left: 25px;
+          padding: 5px 8px;
+          font-size: 0.6rem;
+          
         }
         .par3{
             font-size:0.5rem;
